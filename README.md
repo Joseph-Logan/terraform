@@ -14,5 +14,4 @@
   - DB
   - VM
 
-# Connect to the vm
-ssh -i ci-cd.pem azureuser@4.227.231.51
+

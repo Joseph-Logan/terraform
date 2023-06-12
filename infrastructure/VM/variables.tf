@@ -10,11 +10,6 @@ variable "resource_vm_group_name" {
   description = "Resource group name of virtual machine created"
 }
 
-variable "init_vm_script" {
-  type    = string
-  default = "./scripts/test.sh"
-}
-
 variable "vnet_name" {
   type        = string
   default     = "ci-cd-vnet"
@@ -25,12 +20,6 @@ variable "subnet_name" {
   type        = string
   default     = "ci-cd-subnet"
   description = "Name of subnet"
-}
-
-variable "sql_server_domain_name" {
-  type        = string
-  default     = "sql-octopus-buzzard.database.windows.net"
-  description = "Domain name of sql server created"
 }
 
 variable "sql_db_name" {
@@ -45,8 +34,14 @@ variable "admin_username" {
   description = "Admin user name of database"
 }
 
+variable "sql_server_domain_name" {
+  type        = string
+  default     = "sql-octopus-leech.database.windows.net"
+  description = "Domain name of sql server created"
+}
+
 variable "admin_password" {
   type        = string
-  default     = "i)fg:w1p<{[Qr<VcR_1K"
+  default     = "7qWLyR*=v6s-TDN<LFhO"
   description = "Admin password generated DB module"
 }
